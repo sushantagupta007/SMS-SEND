@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMS SEND</title>
+</head>
+
+<body>
+    <div>
+        <h2> Send SMS Message </h2>
+        <input type="tel" name="number" id="number" placeholder="Enter Number" />
+        <input type="text" name="msg" id="msg" placeholder="Enter Text Message" />
+        <input type="button" id="button" value="Send Message" />
+        <p id="response"> </p>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
+
+<!-- If we set src as public/js/main.js, it will give net::ERR_ABORTED 404 (Not Found)
+But if we set js/main.js, then the error is gone -->
